@@ -1,16 +1,3 @@
-/*/////////////////////////////////////////////////////////////////////////
-                        Assignment 1 - Milestone 3
-Full Name  : Kushaal Singh
-Student ID#: 1153020228
-Email      : kna28@myseneca.ca
-Section    : NRB
-
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
-
 // SAFE-GUARD: 
 // It is good practice to apply safe-guards to header files
 // Safe-guard's ensures only 1 copy of the header file is used in the project build
@@ -22,12 +9,6 @@ piece of work is entirely of my own creation.
 #include <stdio.h>
 #include <string.h>
 
-//////////////////////////////////////
-// Module macro's (usable by any file that includes this header)
-//////////////////////////////////////
-
-// Display formatting options (Provided to student)
-// !!! DO NOT MODIFY THESE MACRO'S !!!
 #define FMT_FORM 1
 #define FMT_TABLE 2
 
@@ -36,9 +17,6 @@ piece of work is entirely of my own creation.
 #define PHONE_DESC_LEN 4
 #define PHONE_LEN 10
 
-
-// MS#3 Additional macro's:
-// ToDo:
 #define STARTHOUR 10
 #define ENDHOUR 14
 #define HOURINTERVAL 30
@@ -63,8 +41,6 @@ struct Patient
     char name[NAME_LEN + 1];
     struct Phone phone;
 };
-
-// ------------------- MS#3 -------------------
 
 // Data type: Time
 struct Time
@@ -91,8 +67,7 @@ struct Appointment {
 };
 
 
-// ClinicData type: Provided to student
-// !!! DO NOT MODIFY THIS DATA TYPE !!!
+// Data type: ClinicData
 struct ClinicData
 {
     struct Patient* patients;
@@ -151,11 +126,6 @@ void editPatient(struct Patient patient[], int max);
 // Remove a patient record from the patient array
 void removePatient(struct Patient patient[], int max);
 
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Milestone #3 mandatory functions...
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
 // View ALL scheduled appointments
 void viewAllAppointments(struct ClinicData* data);
 
@@ -201,8 +171,6 @@ void inputPatient(struct Patient* patient);
 
 // Get user input for phone contact information
 void inputPhoneData(struct Phone* phone);
-
-
 
 
 //////////////////////////////////////

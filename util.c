@@ -1,21 +1,4 @@
-/*/////////////////////////////////////////////////////////////////////////
-                        Assignment 1 - Milestone 3
-Full Name  : Kushaal Singh
-Student ID#: 1153020228
-Email      : kna28@myseneca.ca
-Section    : NRB
-
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
-
 #include "core.h"   
-
-////////////////////////////////////////
-//// INSTRUCTIONS DEFINED FUNCTIONS ////
-////////////////////////////////////////
 
 /* This function clears the input buffer by reading characters from the standard input stream until a newline character is encountered.
    The purpose of this function is to discard any characters left in the input buffer after a previous input operation. */
@@ -35,10 +18,6 @@ void suspend(void) {
     clearInputBuffer();
     putchar('\n');
 }
-
-////////////////////////////////
-//// USER DEFINED FUNCTIONS ////
-////////////////////////////////
 
 /* This function reads from the standard input and validates whether the user only entered an integer. If not the user must enter a new
    value again. */

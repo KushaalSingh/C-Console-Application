@@ -1,47 +1,26 @@
-/*/////////////////////////////////////////////////////////////////////////
-                        Assignment 1 - Milestone 3
-Full Name  : Kushaal Singh
-Student ID#: 1153020228
-Email      : kna28@myseneca.ca
-Section    : NRB
-
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
-
-// include the user library "core" so we can use those functions
 #include "core.h"
-// include the user library "clinic" where the function prototypes are declared
 #include "clinic.h"
 
 //////////////////////////////////////
 // DISPLAY FUNCTIONS
 //////////////////////////////////////
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Display's the patient table header (table format)
-void displayPatientTableHeader(void)
-{
+void displayPatientTableHeader(void) {
     printf("Pat.# Name            Phone#\n"
         "----- --------------- --------------------\n");
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Displays a single patient record in FMT_FORM | FMT_TABLE format
-void displayPatientData(const struct Patient* patient, int fmt)
-{
-    if (fmt == FMT_FORM)
-    {
+void displayPatientData(const struct Patient* patient, int fmt) {
+    if (fmt == FMT_FORM) {
         printf("Name  : %s\n"
             "Number: %05d\n"
             "Phone : ", patient->name, patient->patientNumber);
         displayFormattedPhone(patient->phone.number);
         printf(" (%s)\n", patient->phone.description);
     }
-    else
-    {
+    else {
         printf("%05d %-15s ", patient->patientNumber,
             patient->name);
         displayFormattedPhone(patient->phone.number);
@@ -49,20 +28,16 @@ void displayPatientData(const struct Patient* patient, int fmt)
     }
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Display's appointment schedule headers (date-specific or all records)
-void displayScheduleTableHeader(const struct Date* date, int isAllRecords)
-{
+void displayScheduleTableHeader(const struct Date* date, int isAllRecords) {
     printf("Clinic Appointments for the Date: ");
 
-    if (isAllRecords)
-    {
+    if (isAllRecords) {
         printf("<ALL>\n\n");
         printf("Date       Time  Pat.# Name            Phone#\n"
             "---------- ----- ----- --------------- --------------------\n");
     }
-    else
-    {
+    else {
         printf("%04d-%02d-%02d\n\n", date->year, date->month, date->day);
         printf("Time  Pat.# Name            Phone#\n"
             "----- ----- --------------- --------------------\n");
@@ -71,12 +46,8 @@ void displayScheduleTableHeader(const struct Date* date, int isAllRecords)
 
 // !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Display a single appointment record with patient info. in tabular format
-void displayScheduleData(const struct Patient* patient,
-    const struct Appointment* appoint,
-    int includeDateField)
-{
-    if (includeDateField)
-    {
+void displayScheduleData(const struct Patient* patient, const struct Appointment* appoint, int includeDateField) {
+    if (includeDateField) {
         printf("%04d-%02d-%02d ", appoint->date.year, appoint->date.month,
             appoint->date.day);
     }
@@ -93,10 +64,8 @@ void displayScheduleData(const struct Patient* patient,
 // MENU & ITEM SELECTION FUNCTIONS
 //////////////////////////////////////
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // main menu
-void menuMain(struct ClinicData* data)
-{
+void menuMain(struct ClinicData* data) {
     int selection;
 
     do {
@@ -110,8 +79,7 @@ void menuMain(struct ClinicData* data)
             "Selection: ");
         selection = inputIntRange(0, 2);
         putchar('\n');
-        switch (selection)
-        {
+        switch (selection) {
         case 0:
             printf("Are you sure you want to exit? (y|n): ");
             selection = !(inputCharOption("yn") == 'y');
@@ -131,10 +99,8 @@ void menuMain(struct ClinicData* data)
     } while (selection);
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Patient Management
-void menuPatient(struct Patient patient[], int max)
-{
+void menuPatient(struct Patient patient[], int max) {
     int selection;
 
     do {
@@ -175,7 +141,6 @@ void menuPatient(struct Patient patient[], int max)
     } while (selection);
 }
 
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Patient edit
 void menuPatientEdit(struct Patient* patient)
 {
@@ -213,8 +178,6 @@ void menuPatientEdit(struct Patient* patient)
     } while (selection);
 }
 
-
-// !!! DO NOT MODIFY THIS FUNCTION DEFINITION !!!
 // Menu: Appointment Management
 void menuAppointment(struct ClinicData* data)
 {
@@ -236,34 +199,26 @@ void menuAppointment(struct ClinicData* data)
         switch (selection)
         {
         case 1:
-            viewAllAppointments(data);  // ToDo: You will need to create this function!
+            viewAllAppointments(data); 
             suspend();
             break;
         case 2:
-            viewAppointmentSchedule(data);  // ToDo: You will need to create this function!
+            viewAppointmentSchedule(data);  
             suspend();
             break;
         case 3:
             addAppointment(data->appointments, data->maxAppointments,
-                data->patients, data->maxPatient);  // ToDo: You will need to create this function!
+                data->patients, data->maxPatient);  
             suspend();
             break;
         case 4:
             removeAppointment(data->appointments, data->maxAppointments,
-                data->patients, data->maxPatient);  // ToDo: You will need to create this function!
+                data->patients, data->maxPatient); 
             suspend();
             break;
         }
     } while (selection);
 }
-
-
-// ---------------------------------------------------------------------------
-// !!! INSERT/COPY YOUR MS#2 FUNCTION DEFINITIONS BELOW... !!!
-// Note: Maintain the same order/sequence as it is listed in the header file
-//       Properly organize/categorize any new functions accordingly
-// ---------------------------------------------------------------------------
-
 
 // Display's all patient data in the FMT_FORM | FMT_TABLE format
 void displayAllPatients(const struct Patient patient[], int max, int fmt) {    // Take the 'patient' struct as parameter, max number of patients and the format in which the output must be printed.
@@ -422,11 +377,6 @@ void editPatient(struct Patient patient[], int max) {
         printf("ERROR: Patient record not found!\n\n");
     }
 }
-
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// Milestone #3 mandatory functions...
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 // View ALL scheduled appointments
 void viewAllAppointments(struct ClinicData* data) {

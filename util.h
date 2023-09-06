@@ -1,19 +1,6 @@
-/*/////////////////////////////////////////////////////////////////////////
-                        Assignment 1 - Milestone 3
-Full Name  : Kushaal Singh
-Student ID#: 1153020228
-Email      : kna28@myseneca.ca
-Section    : NRB
-
-Authenticity Declaration:
-I declare this submission is the result of my own work and has not been
-shared with any other student or 3rd party content provider. This submitted
-piece of work is entirely of my own creation.
-/////////////////////////////////////////////////////////////////////////*/
-
 // Fail-Guards : Prevents the complier from making multiple copies of the header files.
-#ifndef CORE_H
-#define CORE_H
+#ifndef UTIL_H
+#define UTIL_H
 
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
