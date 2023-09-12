@@ -11,12 +11,16 @@ The general overview of the application is this, the main menu allows the user t
 
 ### ***PATIENT MENU:***
 Here, the user has a few options, `view` all patient's data, `search` patient, `add` patient, `edit` patient or `remove` a patient.
-  - **VIEW:**\n
+  - **VIEW:**
+    
         Displays all the patient data extracted from the `patientData.txt`.
   - **SEARCH:**
+    
         Here the user has two options to search with, `patient numbr` or `phone number`.
   - **ADD:**
+    
         The user can add a client by filling in the required information.
   - **EDIT:**
+    
         The user can edit individual client's data by selecting them.
 <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="100" height="110">
