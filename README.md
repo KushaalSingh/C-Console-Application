@@ -11,7 +11,7 @@ The general overview of the application is this, the main menu allows the user t
 
 ### ***PATIENT MENU:***
 Here, the user has a few options, `view` all patient's data, `search` patient, `add` patient, `edit` patient or `remove` a patient.
-  - **VIEW:**:
+  - **VIEW:**\n
         Displays all the patient data extracted from the `patientData.txt`.
   - **SEARCH:**
         Here the user has two options to search with, `patient numbr` or `phone number`.
