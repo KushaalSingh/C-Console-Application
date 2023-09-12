@@ -3,7 +3,7 @@
 
 ### This application contains four modules:
   - MAIN       - `containing the main function`
-  - UTIL       - `containing the utility functions`                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="100" height="110">
+  - UTIL       - `containing the utility functions`                                              <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="100" height="110">
   - CLINIC     - `containing the process function`
   - DATA FILES - `containing the list of clients and appointments`
 ----------------------------------
