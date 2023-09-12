@@ -11,7 +11,7 @@
 The general overview of the application is this, the main menu allows the user to go either to `patient menu` or the `appointment menu`.
 
 ### ***PATIENT MENU:***
-Here, the user has a few options, `view` all patient's data, `search` patient, `add` patient, `edit` patient or `remove` a patient.
+Here, the user has a few options, `view` all patients data, `search` patient, `add` patient, `edit` patient or `remove` a patient.
   - **VIEW:**
     
     *Displays data for all the patient's extracted from the patientData.txt.*
@@ -39,6 +39,6 @@ If the user chooses to select the appointment menu, they can `view` all the appo
     *Add appointments by inputing the required informatio.n*
   - **REMOVE:**
 
-    *Remove appointments by inputing patient number and date.*
+    *Remove appointments by inputting patient number and date.*
 --------------------------------------------------------------------------
-> **Incase you are currently taking IPC144, do not plagiarize this project.**
+> **In case you are currently taking IPC144, do not plagiarize this project.**
