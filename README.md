@@ -1,5 +1,6 @@
 # **Veterinary Clinic Console Application**
 > ***Final project for IPC144***
+
 This application contains three modules:
   - MAIN       - `containing the main function`
   - UTIL       - `containing the utility functions`
