@@ -7,7 +7,7 @@
   - UTIL       - `containing the utility functions`                                              
   - CLINIC     - `containing the process function`
   - DATA FILES - `containing the list of clients and appointments`
-----------------------------------
+--
 The general overview of the application is this, the main menu allows the user to go either to `patient menu` or the `appointment menu`.
 
 ### ***PATIENT MENU:***
@@ -25,3 +25,17 @@ Here, the user has a few options, `view` all patient's data, `search` patient, `
     
     *The user can edit individual client's data by selecting them.*
 
+### ***APPOINTMENT MENU:***
+If the user chooses to select the appointment menu, they can `view` all the appointments or sort by date. They can also `add` and `remove` appointments.
+  -**VIEW (ALL):**
+
+  *Display all appointments in the appointmentData.txt.*
+  - **VIEW (BY DATE):**
+    
+  *Display all appointments under the selected date by the user.*
+  - **ADD:**
+    
+  *Add appointments by inputing the required informatio.n*
+  - **REMOVE:**
+
+  *Remove appointments by inputing patient number and date.*
