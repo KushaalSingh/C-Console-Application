@@ -7,7 +7,7 @@
   - UTIL       - `containing the utility functions`                                              
   - CLINIC     - `containing the process function`
   - DATA FILES - `containing the list of clients and appointments`
---
+-----------------------------------------------------------------------
 The general overview of the application is this, the main menu allows the user to go either to `patient menu` or the `appointment menu`.
 
 ### ***PATIENT MENU:***
