@@ -1,4 +1,4 @@
-# <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="40" height="50"> **Veterinary Clinic Console Application**  
+# <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="40" height="40"> **Veterinary Clinic Console Application**  
 > ***Final project for IPC144***
 
 ### This application contains four modules:
