@@ -28,15 +28,15 @@ Here, the user has a few options, `view` all patient's data, `search` patient, `
 ### ***APPOINTMENT MENU:***
 If the user chooses to select the appointment menu, they can `view` all the appointments or sort by date. They can also `add` and `remove` appointments.
 
-  -**VIEW (ALL):**
+  - **VIEW (ALL):**
 
-  *Display all appointments in the appointmentData.txt.*
+    *Display all appointments in the appointmentData.txt.*
   - **VIEW (BY DATE):**
     
-  *Display all appointments under the selected date by the user.*
+    *Display all appointments under the selected date by the user.*
   - **ADD:**
     
-  *Add appointments by inputing the required informatio.n*
+    *Add appointments by inputing the required informatio.n*
   - **REMOVE:**
 
-  *Remove appointments by inputing patient number and date.*
+    *Remove appointments by inputing patient number and date.*
