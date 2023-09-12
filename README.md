@@ -17,11 +17,11 @@ Here, the user has a few options, `view` all patient's data, `search` patient, `
     *Displays data for all the patient's extracted from the patientData.txt.*
   - **SEARCH:**
     
-    Here the user has two options to search with, patient number or phone number.
+    *Here the user has two options to search with, patient number or phone number.*
   - **ADD:**
     
-    The user can add a client by filling in the required information.
+    *The user can add a client by filling in the required information.*
   - **EDIT:**
     
-    The user can edit individual client's data by selecting them.
+    *The user can edit individual client's data by selecting them.*
 
