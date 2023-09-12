@@ -3,7 +3,7 @@
 
 ### This application contains four modules:
   - MAIN       - `containing the main function`
-  - UTIL       - `containing the utility functions`
+  - UTIL       - `containing the utility functions`                <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="100" height="110">
   - CLINIC     - `containing the process function`
   - DATA FILES - `containing the list of clients and appointments`
 ----------------------------------
@@ -16,11 +16,11 @@ Here, the user has a few options, `view` all patient's data, `search` patient, `
         Displays data for all the patient's extracted from the patientData.txt.
   - **SEARCH:**
     
-        Here the user has two options to search with, `patient numbr` or `phone number`.
+        Here the user has two options to search with, patient number or phone number.
   - **ADD:**
     
         The user can add a client by filling in the required information.
   - **EDIT:**
     
         The user can edit individual client's data by selecting them.
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt=" " width="100" height="110">
+
