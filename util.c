@@ -1,4 +1,4 @@
-#include "core.h"   
+#include "util.h"   
 
 /* This function clears the input buffer by reading characters from the standard input stream until a newline character is encountered.
    The purpose of this function is to discard any characters left in the input buffer after a previous input operation. */
