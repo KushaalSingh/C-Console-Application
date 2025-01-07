@@ -38,5 +38,3 @@ If the user chooses to select the appointment menu, they can `view` all the appo
   - **REMOVE:**
 
     *Remove appointments by inputting patient number and date.*
---------------------------------------------------------------------------
-> **In case you are currently taking IPC144, do not plagiarize this project.**
